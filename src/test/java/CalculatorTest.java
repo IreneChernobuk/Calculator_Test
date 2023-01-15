@@ -18,6 +18,7 @@ public class CalculatorTest {
         Assert.assertEquals(actualText, "Your category is Starvation", "message didn't find");
         driver.quit();
     }
+
     @Test
     public void UnderWeightTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
@@ -30,6 +31,7 @@ public class CalculatorTest {
         Assert.assertEquals(actualText, "Your category is Underweight", "message didn't find");
         driver.quit();
     }
+
     @Test
     public void NormalTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
@@ -42,6 +44,7 @@ public class CalculatorTest {
         Assert.assertEquals(actualText, "Your category is Normal", "message didn't find");
         driver.quit();
     }
+
     @Test
     public void OverweightTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
@@ -54,6 +57,8 @@ public class CalculatorTest {
         Assert.assertEquals(actualText, "Your category is Overweight", "message didn't find");
         driver.quit();
     }
+
+
     @Test
     public void ObeseTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
@@ -62,8 +67,10 @@ public class CalculatorTest {
         driver.findElement(By.name("wg")).sendKeys("100");
         driver.findElement(By.name("ht")).sendKeys("100");
         driver.findElement(By.name("cc")).click();
+
         String actualText = driver.findElement(By.name("desc")).getAttribute("value");
         Assert.assertEquals(actualText, "Your category is Obese", "message didn't find");
         driver.quit();
     }
 }
+
