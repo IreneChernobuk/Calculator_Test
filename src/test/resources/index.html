@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_HTML</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: Linen;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr {
+  border: 1px solid #dddddd;
+ }
+         div {
+        color: DarkViolet;
+        font-size: 50px;
+        text-align: center;
+        }
+        .band_list {
+        color: DarkViolet;
+        text-align: left;
+        font-size: 20px;
+        }
+
+    </style>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1 style="color:LimeGreen;" id="t1" name="title" align="center">My first site</h1>
+<div class="divstyle" id="pr" name="priv" align="center">Welcome, My dear friend</div>
+<p id="name" name="my_name" align="center" , style="font-size: 50px">My name is Irina</p>
+<div id="call_mes" name="call_message">Please, see table with my travel plans</div>
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Country</th>
+        <th>Contact</th>
+    </tr>
+    <tr>
+        <td>Nestle</td>
+        <td>Poland</td>
+        <td>Ana Serova</td>
+    </tr>
+    <tr>
+        <td>Volkswagen</td>
+        <td>Germany</td>
+        <td>Mike Simple</td>
+    </tr>
+    <tr>
+        <td>Amazon</td>
+        <td>USA</td>
+        <td>Francisco Chang</td>
+    </tr>
+</table>
+<br>
+<br>
+<div>
+    <span>I like these bands</span>
+    <select name="band" style="font-size: 40px; color: Indigo">
+        <option>Queen</option>
+        <option>The Beatles</option>
+        <option>Rolling Stones</option>
+        <option>Pink Floyd</option>
+    </select>
+</div>
+
+<h2 class="band_list">Bands list</h2>
+
+<ul class="band_list">
+    <li>Queen</li>
+    <li>The Beatles</li>
+    <li>Rolling Stones</li>
+    <li>Pink Floyd</li>
+</ul>
+<input align="center" type="checkbox" id="right" name="right">
+<label for="right" style="font-size: 25px">I'm right-handed </label><br>
+<input type="checkbox" id="left" name="left">
+<label for="left" style="font-size: 25px">I'm left handed </label>
+<br>
+<br>
+<a id="link" href="https://www.w3schools.com">Welcome to W3Schools.com </a>
+<br>
+<br>
+<input id="other_site" type="button" value="Click me!!!">
+<script>
+    other_site.onclick = function() {
+    alert('Спасибо');};
+
+</script>
+<br>
+<br>
+<img name="img" id="img" style="" src="pizza.jpg" alt="oops, you found it" width="500" height="300" style="border:5px solid black">
+</body>
+</html>
