@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class CalculatorTest {
     @Test
 
-    public void StarvationTest() {
+    public void getStarvationTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://healthunify.com/bmicalculator/");
@@ -20,7 +20,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void UnderWeightTest() {
+    public void getUnderWeightTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://healthunify.com/bmicalculator/");
@@ -33,7 +33,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void NormalTest() {
+    public void getNormalTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://healthunify.com/bmicalculator/");
@@ -46,7 +46,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void OverweightTest() {
+    public void getOverweightTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://healthunify.com/bmicalculator/");
@@ -60,7 +60,7 @@ public class CalculatorTest {
 
 
     @Test
-    public void ObeseTest() {
+    public void getObeseTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://healthunify.com/bmicalculator/");
