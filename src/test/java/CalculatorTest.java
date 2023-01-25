@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 public class CalculatorTest {
     @Test
-
     public void getStarvationTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -57,7 +56,6 @@ public class CalculatorTest {
         Assert.assertEquals(actualText, "Your category is Overweight", "message didn't find");
         driver.quit();
     }
-
 
     @Test
     public void getObeseTest() {
