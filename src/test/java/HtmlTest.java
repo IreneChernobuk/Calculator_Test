@@ -10,7 +10,6 @@ public class HtmlTest {
     private static final String PATH = "file:C:\\Users\\Nout\\IdeaProjects\\Calculator_Test\\src\\test\\resources\\index.html";
 
     @Test
-
     public void сontainWelcomeTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -39,7 +38,6 @@ public class HtmlTest {
 
     @Test
     public void getNameTest() {
-
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(PATH);
